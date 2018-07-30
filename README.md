@@ -12,4 +12,3 @@ type Point struct {
 
 func FindPath(grid [][]byte, start, end Point) []Point
 ```
-Note: Coordinate (x, y) is the value of `grid[y][x]` as Go slices are row-major order.
