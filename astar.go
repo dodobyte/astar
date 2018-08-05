@@ -79,6 +79,9 @@ func reverse(path []Point) []Point {
 }
 
 func FindPath(grid [][]byte, start, end Point) []Point {
+	if grid[end.X][end.Y] == 1 {
+		return nil
+	}
 	open := map[Point]*node{}
 	closed := map[Point]*node{}
 	parent := map[Point]Point{}
